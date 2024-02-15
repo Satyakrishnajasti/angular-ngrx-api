@@ -10,6 +10,11 @@ const routes: Routes = [
     component: NavbarComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'albums',
+        pathMatch: 'full',
+      },
+      {
         path: 'albums',
         component: AlbumsPageComponent,
         pathMatch: 'full',

@@ -7,7 +7,7 @@ export const decrement = createAction('[Decrement] Number');
 export const loadPostsAction = createAction('[Data] component');
 export const loadPostsSuccessAction = createAction(
   '[Posts Action] Success Action',
-  props<{ albums: Albums[]; comments: Comments[] }>()
+  props<{ albums: Albums[]; comments: Comments[]; load: boolean }>()
 );
 export const loadPostsFailedAction = createAction(
   '[Posts Action] Failed Action',

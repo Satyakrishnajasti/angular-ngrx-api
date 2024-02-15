@@ -15,7 +15,7 @@ export interface PostState {
 export const initialState: PostState = {
   albums: [],
   comments: [],
-  load: false,
+  load: true,
 };
 
 const apiReducer = createReducer(
@@ -30,6 +30,7 @@ const apiReducer = createReducer(
       ...state,
       albums: [...action.albums],
       comments: [...action.comments],
+      load: action.load,
     };
   }),
   on(loadPostsFailedAction, (state) => {

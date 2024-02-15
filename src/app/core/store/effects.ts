@@ -36,6 +36,7 @@ export class DataEffects {
                 loadPostsSuccessAction({
                   albums: element1,
                   comments: element2,
+                  load: false,
                 })
               ),
               catchError((error) => of(loadPostsFailedAction))
