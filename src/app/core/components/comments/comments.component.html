@@ -1,0 +1,6 @@
+<ng-container *ngIf="comments.length > 0">
+  <div *ngFor="let comment of comments; let i = index">
+    {{ comment | json }}
+    <hr />
+  </div>
+</ng-container>

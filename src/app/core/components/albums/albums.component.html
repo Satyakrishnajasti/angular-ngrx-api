@@ -1,0 +1,6 @@
+<ng-container *ngIf="albums.length > 0">
+  <div *ngFor="let album of albums; let i = index">
+    {{ album | json }}
+    <hr />
+  </div>
+</ng-container>
